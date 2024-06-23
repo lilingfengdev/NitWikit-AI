@@ -67,7 +67,12 @@ export const initialSettings = {
 
 export type Settings = typeof initialSettings
 
-export const uniModals: Model[] = []
+export const uniModals: Model[] = [{
+    id: '@cf/qwen/qwen1.5-14b-chat-awq',
+    name: 'qwen1.5-14b-chat-awq',
+    provider: 'workers-ai',
+    type: 'chat'
+}]
 
 export const textGenModels: Model[] = [{
     id: '@cf/meta/llama-2-7b-chat-fp16',
@@ -107,16 +112,6 @@ export const textGenModels: Model[] = [{
 },{
     id: '@cf/google/gemma-2b-it-lora',
     name: 'gemma-2b-it-lora',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@cf/qwen/qwen1.5-14b-chat-awq',
-    name: 'qwen1.5-14b-chat-awq数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@cf/qwen/qwen1.5-7b-chat-awq',
-    name: 'qwen1.5-7b-chat-awq',
     provider: 'workers-ai',
     type: 'chat'
 },{
