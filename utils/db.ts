@@ -62,14 +62,14 @@ export const DB = new Database();
 export const initialSettings = {
     openaiKey: '',
     image_steps: 20,
-    system_prompt: 'You are NitWikit AI, Follow the user\'s instructions carefully. Respond using markdown.',
+    system_prompt: '你是NitWikit AI,你应该认真的回复用户的问题,使用markdown回复.',
 }
 
 export type Settings = typeof initialSettings
 
 export const uniModals: Model[] = [{
     id: '@cf/qwen/qwen1.5-14b-chat-awq',
-    name: 'qwen1.5-14b-chat-awq',
+    name: 'Qwen1.5 生成文本模型,140亿参数',
     provider: 'workers-ai',
     type: 'chat'
 }]
@@ -144,12 +144,7 @@ export const textGenModels: Model[] = [{
     name: 'UNA 生成文本模型,70亿参数',
     provider: 'workers-ai',
     type: 'chat'
-},{
-    id: '@cf/meta/m2m100-1.2b',
-    name: 'M2M100 多语言翻译模型,12亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},]
+}]
 
 export const imageGenModels: Model[] = [{
     id: '@cf/lykon/dreamshaper-8-lcm',
