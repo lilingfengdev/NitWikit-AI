@@ -62,72 +62,102 @@ export const DB = new Database();
 export const initialSettings = {
     openaiKey: '',
     image_steps: 20,
-    system_prompt: 'You are ChatGPT, a large language model trained by OpenAI. Follow the user\'s instructions carefully. Respond using markdown.',
+    system_prompt: 'You are NitWikit AI, Follow the user\'s instructions carefully. Respond using markdown.',
 }
 
 export type Settings = typeof initialSettings
 
-export const uniModals: Model[] = [
-    {
-        id: 'gemini-1.5-flash',
-        name: 'Gemini 1.5 flash',
-        provider: 'google',
-        type: 'universal'
-    },
-    {
-        id: 'gemini-1.5-pro',
-        name: 'Gemini 1.5 Pro',
-        provider: 'google',
-        type: 'universal'
-    }
-]
 
 export const textGenModels: Model[] = [{
-    id: 'gpt-3.5-turbo',
-    name: 'ChatGPT-3.5-turbo',
-    provider: 'openai',
-    endpoint: 'chat/completions',
+    id: '@cf/meta/llama-2-7b-chat-fp16',
+    name: 'LLama(fp16)生成文本模型,70亿参数',
+    provider: 'workers-ai',
     type: 'chat'
-}, {
+},{
+    id: '@cf/mistral/mistral-7b-instruct-v0.1',
+    name: 'Mistral 生成文本模型,70 亿参数微调版本',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@hf/thebloke/deepseek-coder-6.7b-base-awq',
+    name: 'Deepseek 代码生成文本模型,67亿参数',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@hf/thebloke/deepseek-coder-6.7b-instruct-awq',
+    name: 'Deepseek 代码生成文本模型,67亿参数微调版本',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@cf/deepseek-ai/deepseek-math-7b-base',
+    name: 'Deepseek 数学生成文本模型,67亿参数',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@cf/deepseek-ai/deepseek-math-7b-instruct',
+    name: 'Deepseek 数学生成文本模型,67亿参数微调版本',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@cf/tiiuae/falcon-7b-instruct',
+    name: 'Falcon 因果解码器生成文本模型,70亿参数微调版本',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@cf/google/gemma-2b-it-lora',
+    name: 'Gemma 轻量级开放式生成文本模型,20亿参数',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
     id: '@cf/qwen/qwen1.5-14b-chat-awq',
-    name: 'qwen1.5-14b-chat-awq',
+    name: 'Qwen1.5 阿里云生成文本模型,140亿参数',
     provider: 'workers-ai',
     type: 'chat'
-}, {
-    id: '@cf/openchat/openchat-3.5-0106',
-    name: 'openchat-3.5-0106',
+},{
+    id: '@cf/qwen/qwen1.5-7b-chat-awq',
+    name: 'Qwen1.5 阿里云生成文本模型,70亿参数',
     provider: 'workers-ai',
     type: 'chat'
-}, {
-    id: '@cf/google/gemma-7b-it-lora',
-    name: 'gemma-7b-it-lora',
+},{
+    id: '@cf/defog/sqlcoder-7b-2',
+    name: 'SQLCoder SQL语句生成文本模型,70亿参数',
     provider: 'workers-ai',
     type: 'chat'
-}, {
-    id: '@hf/thebloke/openhermes-2.5-mistral-7b-awq',
-    name: 'openhermes-2.5-mistral-7b-awq',
-    provider: 'workers-ai',
-    type: 'chat'
-}, {
-    id: '@hf/thebloke/neural-chat-7b-v3-1-awq',
-    name: 'neural-chat-7b-v3-1-awq',
-    provider: 'workers-ai',
-    type: 'chat'
-}, {
+},{
     id: '@hf/nexusflow/starling-lm-7b-beta',
-    name: 'starling-lm-7b-beta',
+    name: 'Starling RLAIF生成文本模型,70亿参数',
     provider: 'workers-ai',
     type: 'chat'
-}, {
-    id: '@cf/meta/llama-3-8b-instruct',
-    name: 'llama-3-8b-instruct',
+},{
+    id: '@cf/openchat/openchat-3.5-0106',
+    name: 'OpenChat 生成文本模型,35亿参数',
     provider: 'workers-ai',
     type: 'chat'
-}]
+},{
+    id: '@cf/fblgit/una-cybertron-7b-v2-bf16',
+    name: 'UNA 生成文本模型,70亿参数',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@cf/meta/m2m100-1.2b',
+    name: 'M2M100 多语言翻译模型,12亿参数',
+    provider: 'workers-ai',
+    type: 'chat'
+},]
 
 export const imageGenModels: Model[] = [{
     id: '@cf/lykon/dreamshaper-8-lcm',
     name: 'dreamshaper-8-lcm',
+    provider: 'workers-ai-image',
+    type: 'text-to-image'
+}, {
+    id: '@cf/runwayml/stable-diffusion-v1-5-img2img',
+    name: 'stable-diffusion-v1-5-img2img',
+    provider: 'workers-ai-image',
+    type: 'text-to-image'
+}, {
+    id: '@cf/runwayml/stable-diffusion-v1-5-inpainting',
+    name: 'stable-diffusion-v1-5-inpainting',
     provider: 'workers-ai-image',
     type: 'text-to-image'
 }, {
@@ -142,4 +172,4 @@ export const imageGenModels: Model[] = [{
     type: 'text-to-image'
 }]
 
-export const models: Model[] = [...uniModals, ...textGenModels, ...imageGenModels]
+export const models: Model[] = [...textGenModels, ...imageGenModels]
