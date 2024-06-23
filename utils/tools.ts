@@ -35,7 +35,7 @@ export function scrollToTop(el: HTMLElement | null) {
 }
 
 export function getSystemPrompt() {
-    const content = JSON.parse(localStorage.getItem('settings') || '{}').system_prompt || 'You are ChatGPT, a large language model trained by OpenAI. Follow the user\'s instructions carefully. Respond using markdown.'
+    const content = JSON.parse(localStorage.getItem('settings') || '{}').system_prompt || '你是NitWikit AI,你应该认真的回复用户的问题,使用markdown回复.'
     const p: OpenAIMessage = {
         role: 'system',
         content
