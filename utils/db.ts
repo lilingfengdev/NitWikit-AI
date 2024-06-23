@@ -139,12 +139,7 @@ export const textGenModels: Model[] = [{
     name: 'una-cybertron-7b-v2-bf16',
     provider: 'workers-ai',
     type: 'chat'
-},{
-    id: '@cf/meta/m2m100-1.2b',
-    name: 'm2m100-1.2b',
-    provider: 'workers-ai',
-    type: 'chat'
-},]
+}]
 
 export const imageGenModels: Model[] = [{
     id: '@cf/lykon/dreamshaper-8-lcm',
