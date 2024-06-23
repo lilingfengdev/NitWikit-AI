@@ -12,6 +12,9 @@ export default defineNuxtConfig({
             prerender: true,
         }
     },
+    build: {
+        publicPath: 'NitWikit-AI'
+    },
     app: {
         head: {
             title: 'CF AI Web',
