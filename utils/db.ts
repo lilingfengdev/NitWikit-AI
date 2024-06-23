@@ -96,7 +96,7 @@ export const textGenModels: Model[] = [{
     type: 'chat'
 },{
     id: '@cf/deepseek-ai/deepseek-math-7b-instruct',
-    name: 'deepseek-math-7b-instruct版本',
+    name: 'deepseek-math-7b-instruct',
     provider: 'workers-ai',
     type: 'chat'
 },{
