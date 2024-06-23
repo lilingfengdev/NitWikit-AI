@@ -67,7 +67,7 @@ export const initialSettings = {
 
 export type Settings = typeof initialSettings
 
-
+export const uniModels: Model[] = []
 export const textGenModels: Model[] = [{
     id: '@cf/meta/llama-2-7b-chat-fp16',
     name: 'LLama(fp16)生成文本模型,70亿参数',
