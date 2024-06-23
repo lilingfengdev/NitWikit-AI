@@ -13,7 +13,7 @@ export default defineNuxtConfig({
         }
     },
     build: {
-        publicPath: 'NitWikit-AI'
+        publicPath: '/NitWikit-AI/'
     },
     app: {
         head: {
