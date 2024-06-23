@@ -71,77 +71,77 @@ export const uniModals: Model[] = []
 
 export const textGenModels: Model[] = [{
     id: '@cf/meta/llama-2-7b-chat-fp16',
-    name: 'LLama(fp16)生成文本模型,70亿参数',
+    name: 'llama-2-7b-chat-fp16',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@cf/mistral/mistral-7b-instruct-v0.1',
-    name: 'Mistral 生成文本模型,70 亿参数微调版本',
+    name: 'mistral-7b-instruct-v0.1',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@hf/thebloke/deepseek-coder-6.7b-base-awq',
-    name: 'Deepseek 代码生成文本模型,67亿参数',
+    name: 'deepseek-coder-6.7b-base-awq',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@hf/thebloke/deepseek-coder-6.7b-instruct-awq',
-    name: 'Deepseek 代码生成文本模型,67亿参数微调版本',
+    name: 'deepseek-coder-6.7b-instruct-awq',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@cf/deepseek-ai/deepseek-math-7b-base',
-    name: 'Deepseek 数学生成文本模型,67亿参数',
+    name: 'deepseek-math-7b-base',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@cf/deepseek-ai/deepseek-math-7b-instruct',
-    name: 'Deepseek 数学生成文本模型,67亿参数微调版本',
+    name: 'deepseek-math-7b-instruct版本',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@cf/tiiuae/falcon-7b-instruct',
-    name: 'Falcon 因果解码器生成文本模型,70亿参数微调版本',
+    name: 'falcon-7b-instruct',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@cf/google/gemma-2b-it-lora',
-    name: 'Gemma 轻量级开放式生成文本模型,20亿参数',
+    name: 'gemma-2b-it-lora',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@cf/qwen/qwen1.5-14b-chat-awq',
-    name: 'Qwen1.5 阿里云生成文本模型,140亿参数',
+    name: 'qwen1.5-14b-chat-awq数',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@cf/qwen/qwen1.5-7b-chat-awq',
-    name: 'Qwen1.5 阿里云生成文本模型,70亿参数',
+    name: 'qwen1.5-7b-chat-awq',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@cf/defog/sqlcoder-7b-2',
-    name: 'SQLCoder SQL语句生成文本模型,70亿参数',
+    name: 'sqlcoder-7b-2',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@hf/nexusflow/starling-lm-7b-beta',
-    name: 'Starling RLAIF生成文本模型,70亿参数',
+    name: 'starling-lm-7b-beta',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@cf/openchat/openchat-3.5-0106',
-    name: 'OpenChat 生成文本模型,35亿参数',
+    name: 'openchat-3.5-0106',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@cf/fblgit/una-cybertron-7b-v2-bf16',
-    name: 'UNA 生成文本模型,70亿参数',
+    name: 'una-cybertron-7b-v2-bf16',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@cf/meta/m2m100-1.2b',
-    name: 'M2M100 多语言翻译模型,12亿参数',
+    name: 'm2m100-1.2b',
     provider: 'workers-ai',
     type: 'chat'
 },]
