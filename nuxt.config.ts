@@ -12,20 +12,17 @@ export default defineNuxtConfig({
             prerender: true,
         }
     },
-    build: {
-        publicPath: '/NitWikit-AI/'
-    },
     app: {
         head: {
-            title: 'CF AI Web',
+            title: 'NitWikit AI Web',
             meta: [
                 {
                     name: 'keywords',
-                    content: 'CF AI Web, AI, Cloudflare Workers, ChatGPT, GeminiPro, Google Generative AI'
+                    content: 'NitWikit AI Web, AI, Cloudflare Workers AI'
                 },
                 {
                     name: 'description',
-                    content: 'Integrated web platform supporting GeminiPro/Cloudflare Workers AI/ChatGPT by Jazee6'
+                    content: 'Integrated web platform supporting Cloudflare Workers AI Jazee6'
                 }
             ],
             link: [

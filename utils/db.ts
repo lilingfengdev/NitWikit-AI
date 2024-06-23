@@ -95,13 +95,13 @@ export const textGenModels: Model[] = [{
     provider: 'workers-ai',
     type: 'chat'
 },{
-    id: '@cf/deepseek-ai/deepseek-math-7b-base',
-    name: 'Deepseek 数学生成文本模型,67亿参数',
+    id: '@cf/tinyllama/tinyllama-1.1b-chat-v1.0e',
+    name: 'Tinyllama 生成文本模型,11亿参数',
     provider: 'workers-ai',
     type: 'chat'
 },{
-    id: '@cf/deepseek-ai/deepseek-math-7b-instruct',
-    name: 'Deepseek 数学生成文本模型,67亿参数微调版本',
+    id: '@cf/microsoft/phi-2',
+    name: 'PHI 生成文本模型,27亿参数',
     provider: 'workers-ai',
     type: 'chat'
 },{
