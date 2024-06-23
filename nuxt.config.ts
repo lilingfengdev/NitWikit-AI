@@ -14,11 +14,11 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
-            title: 'NitWikit AI Web',
+            title: 'NitWikit AI 在线',
             meta: [
                 {
                     name: 'keywords',
-                    content: 'NitWikit AI Web, AI, Cloudflare Workers AI'
+                    content: 'NitWikit AI 在线, AI, Cloudflare Workers AI'
                 },
                 {
                     name: 'description',

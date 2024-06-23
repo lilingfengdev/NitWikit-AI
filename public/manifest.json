@@ -1,10 +1,10 @@
 {
-  "name": "NitWikit AI Web",
-  "short_name": "NitWikit AI Web",
+  "name": "NitWikit AI 在线",
+  "short_name": "NitWikit AI 在线",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
-  "description": "NitWikit AI Web App",
+  "description": "NitWikit AI 在线 App",
   "icons": [
     {
       "src": "/pwa.webp",
