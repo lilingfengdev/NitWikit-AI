@@ -62,7 +62,7 @@ export const DB = new Database();
 export const initialSettings = {
     openaiKey: '',
     image_steps: 20,
-    system_prompt: '你是NitWikit AI,你应该认真的回复用户的问题,使用markdown回复.',
+    system_prompt: '你是笨蛋文档 AI,你应该认真的回复用户的问题,使用markdown回复.',
 }
 
 export type Settings = typeof initialSettings
