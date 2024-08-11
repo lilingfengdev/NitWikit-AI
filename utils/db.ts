@@ -85,6 +85,16 @@ export const textGenModels: Model[] = [{
     provider: 'workers-ai',
     type: 'chat'
 },{
+    id: '@cf/meta/llama-2-7b-chat-int8',
+    name: 'LLama(int8)生成文本模型,70亿参数',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@hf/meta-llama/meta-llama-3-8b-instruct',
+    name: 'Meta Llama 生成文本模型,38 亿参数微调版本',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
     id: '@hf/thebloke/deepseek-coder-6.7b-base-awq',
     name: 'Deepseek 代码生成文本模型,67亿参数',
     provider: 'workers-ai',
@@ -95,8 +105,18 @@ export const textGenModels: Model[] = [{
     provider: 'workers-ai',
     type: 'chat'
 },{
-    id: '@cf/tinyllama/tinyllama-1.1b-chat-v1.0e',
-    name: 'Tinyllama 生成文本模型,11亿参数',
+    id: '@hf/thebloke/llamaguard-7b-awq',
+    name: 'LlamaGuard 生成文本模型,70亿参数',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@hf/thebloke/neural-chat-7b-v3-1-awq',
+    name: 'Neural Chat 生成文本模型,70亿参数',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@cf/tinyllama/tinyllama-1.1b-chat-v1.0',
+    name: 'TinyLlama 生成文本模型,11 亿参数',
     provider: 'workers-ai',
     type: 'chat'
 },{
@@ -142,6 +162,26 @@ export const textGenModels: Model[] = [{
 },{
     id: '@cf/fblgit/una-cybertron-7b-v2-bf16',
     name: 'UNA 生成文本模型,70亿参数',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@cf/thebloke/discolm-german-7b-v1-awq',
+    name: 'DisCoLM 生成文本模型,70亿参数',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@cf/deepseek-ai/deepseek-math-7b-instruct',
+    name: 'DeepSeek 数学生成文本模型,70亿参数',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@hf/thebloke/zephyr-7b-beta-awq',
+    name: 'Zephyr 生成文本模型,70亿参数',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@hf/nousresearch/hermes-2-pro-mistral-7b',
+    name: 'Hermes 生成文本模型,70亿参数',
     provider: 'workers-ai',
     type: 'chat'
 }]
