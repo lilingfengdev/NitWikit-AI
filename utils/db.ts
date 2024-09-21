@@ -135,11 +135,6 @@ export const textGenModels: Model[] = [{
     provider: 'workers-ai',
     type: 'chat'
 },{
-    id: '@cf/qwen/qwen1.5-14b-chat-awq',
-    name: 'Qwen1.5 生成文本模型,140亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
     id: '@cf/qwen/qwen1.5-7b-chat-awq',
     name: 'Qwen1.5 生成文本模型,70亿参数',
     provider: 'workers-ai',
