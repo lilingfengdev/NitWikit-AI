@@ -69,114 +69,59 @@ export type Settings = typeof initialSettings
 
 export const uniModals: Model[] = [{
     id: '@cf/qwen/qwen1.5-14b-chat-awq',
-    name: 'Qwen1.5 生成文本模型,140亿参数',
+    name: 'Qwen1.5 模型(140亿参数)',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@cf/meta/llama-3.1-70b-instruct',
+    name: 'Llama3.1 模型(700亿参数)',
     provider: 'workers-ai',
     type: 'chat'
 }]
 
 export const textGenModels: Model[] = [{
-    id: '@cf/meta/llama-2-7b-chat-fp16',
-    name: 'LLama(fp16)生成文本模型,70亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@cf/mistral/mistral-7b-instruct-v0.1',
-    name: 'Mistral 生成文本模型,70 亿参数微调版本',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@cf/meta/llama-2-7b-chat-int8',
-    name: 'LLama(int8)生成文本模型,70亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@hf/meta-llama/meta-llama-3-8b-instruct',
-    name: 'Meta Llama 生成文本模型,38 亿参数微调版本',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@hf/thebloke/deepseek-coder-6.7b-base-awq',
-    name: 'Deepseek 代码生成文本模型,67亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
     id: '@hf/thebloke/deepseek-coder-6.7b-instruct-awq',
-    name: 'Deepseek 代码生成文本模型,67亿参数微调版本',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@hf/thebloke/llamaguard-7b-awq',
-    name: 'LlamaGuard 生成文本模型,70亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@hf/thebloke/neural-chat-7b-v3-1-awq',
-    name: 'Neural Chat 生成文本模型,70亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@cf/tinyllama/tinyllama-1.1b-chat-v1.0',
-    name: 'TinyLlama 生成文本模型,11 亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@cf/microsoft/phi-2',
-    name: 'PHI 生成文本模型,27亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@cf/tiiuae/falcon-7b-instruct',
-    name: 'Falcon 因果解码器生成文本模型,70亿参数微调版本',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@cf/google/gemma-2b-it-lora',
-    name: 'Gemma 轻量级开放式生成文本模型,20亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@cf/qwen/qwen1.5-7b-chat-awq',
-    name: 'Qwen1.5 生成文本模型,70亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@cf/defog/sqlcoder-7b-2',
-    name: 'SQLCoder SQL语句生成文本模型,70亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@hf/nexusflow/starling-lm-7b-beta',
-    name: 'Starling RLAIF生成文本模型,70亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@cf/openchat/openchat-3.5-0106',
-    name: 'OpenChat 生成文本模型,35亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@cf/fblgit/una-cybertron-7b-v2-bf16',
-    name: 'UNA 生成文本模型,70亿参数',
-    provider: 'workers-ai',
-    type: 'chat'
-},{
-    id: '@cf/thebloke/discolm-german-7b-v1-awq',
-    name: 'DisCoLM 生成文本模型,70亿参数',
+    name: 'DeepSeek 代码生成模型',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@cf/deepseek-ai/deepseek-math-7b-instruct',
-    name: 'DeepSeek 数学生成文本模型,70亿参数',
+    name: 'DeepSeek 数学模型',
     provider: 'workers-ai',
     type: 'chat'
 },{
-    id: '@hf/thebloke/zephyr-7b-beta-awq',
-    name: 'Zephyr 生成文本模型,70亿参数',
+    id: '@cf/tiiuae/falcon-7b-instruct',
+    name: 'Falcon 模型',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@hf/google/gemma-7b-it',
+    name: 'Google Gemma 模型',
     provider: 'workers-ai',
     type: 'chat'
 },{
     id: '@hf/nousresearch/hermes-2-pro-mistral-7b',
-    name: 'Hermes 生成文本模型,70亿参数',
+    name: 'Hermes 2 Pro 模型',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@hf/thebloke/llamaguard-7b-awq',
+    name: 'Llama Guard 模型',
+    provider: 'workers-ai',
+    type: 'chat'
+}, {
+    id: '@cf/tinyllama/tinyllama-1.1b-chat-v1.0',
+    name: 'TinyLlama 模型',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@cf/microsoft/phi-2',
+    name: 'PHI 模型',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: '@cf/defog/sqlcoder-7b-2',
+    name: 'SQLCoder SQL语句模型',
     provider: 'workers-ai',
     type: 'chat'
 }]
@@ -194,6 +139,16 @@ export const imageGenModels: Model[] = [{
 }, {
     id: '@cf/bytedance/stable-diffusion-xl-lightning',
     name: 'stable-diffusion-xl-lightning',
+    provider: 'workers-ai-image',
+    type: 'text-to-image'
+}, {
+    id: '@cf/runwayml/stable-diffusion-v1-5-inpainting',
+    name: 'stable-diffusion-v1-5-inpainting',
+    provider: 'workers-ai-image',
+    type: 'text-to-image'
+}, {
+    id: '@cf/black-forest-labs/flux-1-schnell',
+    name: 'flux-1-schnell',
     provider: 'workers-ai-image',
     type: 'text-to-image'
 }]
